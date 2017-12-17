@@ -5,6 +5,7 @@
 	<title>Trivia Game</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 </head>
 <body>
 	<!--bootstrap:5 rows and 2 columns-->
@@ -20,6 +21,10 @@
 
 <!--game content section-->
 <div class="row">
+	<div class>
+		<span id="timer">1:00 
+			<!--timer set to 1 minute-->
+	</span> </div>
 	<div class="col-md-6"></div>
 		<h2>image display</h2>
 		<!--insert p tags on first column to display images seperately?-->
@@ -28,20 +33,20 @@
 </div>
 
 <div class="row">
-		<div class="col-md-6">
+		<div class="col-md-6 gamequestions">
 			<h2>trivia questions</h2>
 			<p class="questionOne">
-				Question 1 :
+				<img class="answerimage">
 			</p>
-						<p class="questionTwo">
-							Question 2:
-						</p>
-									<p class="questionThree">
-										Question 3:
-									</p>
-												<p class="questionFour">
-													Question 4:
-												</p>
+			<p class="questionTwo">
+				<img class="answerimage">
+			</p>
+			<p class="questionThree">
+			<img class="answerimage">
+			</p>
+			<p class="questionFour">
+			<img class="answerimage">
+			</p>
 															
 		</div>
 </div>
@@ -50,6 +55,7 @@
 
 <div class="row"></div>
 
-
+<script type="text/javascript" href="assets/javascript/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
