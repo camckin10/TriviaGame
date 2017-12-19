@@ -147,7 +147,7 @@ console.log(gamequestions.firstround);
 //create an array of images so images can loop through 
 //depending upon what question the user is on?
 
-//test to see if images show
+//test code to see if images show on html page 
 var images = ['felicia.jpg','fist.jpg', 'rihannas.jpg'],
     index = 0, // starting index
     maxImages = images.length - 1;
