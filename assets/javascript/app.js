@@ -96,7 +96,6 @@ var cheatsheet = {
 		secondround:'terry crews','ice cube','deon cole','eddie murphy',
 		thirdround:'money','keys','gum','car'
 	}, 
-
 	//correct answers
 	//firstround:big freedia
 	//secondround:ice cube
