@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Trivia Game</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <title>Trivia timer</title>
 </head>
+
 <body>
-	<!--bootstrap:5 rows and 2 columns-->
+  <h1>Totally Trivial Trivia!</h1>
 
-	<!--jumbotron section-->
-	<div class="container">
-	<div class="jumbotron">
-  <h1 class="display-3">Do It For The Culture..</h1>
-  <p class="lead">Game Instructions</p>
-</div>	
-	</div>
-<!--end jumbotron section-->
+  <div id="questionOne"></div>
+  <button class = "answers">A</button>
+  <button class = "answers">B</button>
+  <button class = "answers">C</button>
+  <button class = "answers">D</button>
 
-<!--game content section-->
-<div class="row">
-	<div class>
-		<span id="timer">1:00 
-			<!--timer set to 1 minute-->
-	</span> </div>
-	<div class="col-md-6"></div>
-		<h2>image display</h2>
-		<!--insert p tags on first column to display images seperately?-->
-		
-	</div>
-</div>
+  <div id="questionTwo"></div>
+   <button class = "answers">A</button>
+  <button class = "answers">B</button>
+  <button class = "answers">C</button>
+  <button class = "answers">D</button>
 
-<div class="row">
-		<div class="col-md-6 gamequestions">
-			<h2>trivia questions</h2>
-			<p class="questionOne">
-				<img class="answerimage">
-			</p>
-			<p class="questionTwo">
-				<img class="answerimage">
-			</p>
-			<p class="questionThree">
-			<img class="answerimage">
-			</p>
-			<p class="questionFour">
-			<img class="answerimage">
-			</p>
-															
-		</div>
-</div>
+  <div id="questionThree"></div>
+   <button class = "answers">A</button>
+  <button class = "answers">B</button>
+  <button class = "answers">C</button>
+  <button class= "answers">D</button>
 
-<div class="row"></div>
+  <div id="questionFour"></div>
+   <button class = "answers">A</button>
+  <button class = "answers">B</button>
+  <button class = "answers">C</button>
+  <button class = "answers">D</button>
 
-<div class="row"></div>
+  <div id="useranswers"></div>
 
-<script type="text/javascript" href="assets/javascript/app.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <button id="start">Start</button>
+  <p>time remaining: <span id="timer"></span> seconds</p>
 </body>
+<script src="assets/javacsript/logic.js"></script>
+
 </html>
