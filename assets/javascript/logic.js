@@ -92,40 +92,79 @@ var gameQuestions = [
   }
 ]
 
+//function for displaying questions
+function displayQuestions (startNum, endNum) {
+  var quiz = $("#quiz");
+  for (var i = 0; i < gameQuestions.length; i++) {
+          if(i <= endNum && i > startNum){
+            for (var i = 0; i < gameQuestions.length; i++) {
+          quiz.append("<h2>" + gameQuestions[i].question + "</h2>");
+          for (var j = 0; j < gameQuestions[i].choices.length; j++) {
+            quiz.append("<input type='radio' name='question-" + i +
+            "' value='" + gameQuestions[i].choices[j] + "''>" + gameQuestions[i].choices[j]);
+          }
+        }
+      }
+    }
+    quiz.append("<button id=Next>Next</button>");
+}
+
+//on click function for input buttons
+
+
+//function and/or object for counting correct/incorrect answers
+//clicker counting correct/incorrect answers adds up regardless 1/28/18
+var correct=0;
+var incorrect=0;
+
+function checkedQuestions() {
+  if (incorrect > correct) {
+    console.log("incorrect!");
+    //alert("incorrect");
+    incorrect++;
+    $("#incorrect").html("Incorrect:" + incorrect);
+  } else {
+    console.log("correct");
+    //alert("correct");
+    correct++;
+    $("#correct").html("Correct:" + correct);
+
+  } 
+  
+}
+
+//function for registering input/answers to be clicked
+//MUST change the id...id in current parenthesis is temp placement
+$("input-question-0").on("click", function (){
+      if ($(this).val() === gameQuestions[0].answer) {
+        correct++;
+      }
+      else {
+        incorrect++;
+      }
+    })
+
+
+//.each method example used for reference 
+// $.each($("input[name='question-0']:checked"), function() {
+//       if ($(this).val() === gameQuestions[0].answer) {
+//         correct++;
+//       }
+//       else {
+//         incorrect++;
+//       }
+//     });
 
 // function to set off time count
 function start() {
   console.log(gameQuestions[0].question);
-
   intervalId = setInterval(count, 45000);
-$('#questionOne').append(gameQuestions[0].question);
-$('#questionTwo').append(gameQuestions[1].question);
-$('#questionThree').append(gameQuestions[2].question);
-$('#questionFour').append(gameQuestions[3].question);
-//for loop for choices to display?
-//console.log(gameQuestions[0]);
-var choices = gameQuestions[0].choices;
-for (var i = 0; i <choices.length; i ++) {
-   intervalId= setInterval(count, 45000);
-   console.log(gameQuestions[0].choices)
-  $('#button').append("<button>" + gameQuestions[0].choices[i] + "</button>");
-  //$('#button').append("<button>" + gameQuestions[1].choices[i] + "</button>");
- //$('#button').append("<button>" + gameQuestions[2].choices[i] + "</button>");
- //$('#button').append("<button>" + gameQuestions[3].choices[i] + "</button>");
-}
+  $("#quiz").empty();
+  displayQuestions(0,4);
+  checkedQuestions();
 
  }
-
-
-//function to show choices
-//$('#choices').on("click", function () {
-   //intervalId= setInterval(count, 45000);
-  //$('#choices').append(gameQuestions[0].choices);
-//});
                 
-
-
-
 
 
 // function that will keep track of time by increasing by variable by 1
@@ -150,22 +189,3 @@ function gameEnd () {
 }
 
 
-
-
-//var currentQuestion = 0 ;
-//var wins=0;
-//var losses=0;
-
-//var quizSetup = document.getElemenyById('quiz');
-//var question ; //question in gameQuestions array
-//var choices; //multiple choice options in question array
-//var index = 0; //index is 0 since will be indexing into choices array
-
-//function askQuestion () {  //function for questions in the game 
-//choices = gameQuestions[currentQuestion].choices;
-//question= gameQuestions[currentQuestion].question;
-
-//if (currentQuestion === gameQuestions.length - 1) {
-//start.value = "Next"; //changing start button to next so user can go to next page with questions
-//}
-//} -->

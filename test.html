@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game #2</title>
+	<!--<script src="jquery-3.2.1.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--option #1-->
+<!--<button id="selectid" name="selectname" onchange="jsfunc1()">
+    <input type="radio" name="radio1" value="val1" id="valid1"> Val1
+     <input type="radio" name="radio1" value="val1" id="valid1"> Val2 
+     <input type="radio" name="radio1" value="val1" id="valid1"> Val3
+     
+    <!<option value="val2" id="valid2"> Val2 </option>-->
+   <!-- <option value="val3" id="valid3"> Val3 </option>-->
+
+
+
+<!--option #2--><!--form action="http://www.html.am/html-codes/forms/html-form-tag-action.cfm" target="result" method="get">-->
+<h3>Round 1</h3>
+<div class="questions">
+<p>Question 1:What is your gender?</p>
+</div>
+<div class="answers">
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female" id="answer1"> Female
+<input type="radio" name="gender" value="female"> Dog 
+</div>
+
+
+<div class="questions"><p> Question 2:What is your favorite color?</p></div>
+<div class="answers">
+<input type="radio" name="color" value="blue"> Blue 
+<input type="radio" name="color" value="yellow"> Yellow
+<input type="radio" name="color" value="green" id="answer1"> Green
+<input type="radio" name="color" value="red"> Red
+</div>
+
+
+<div class="questions"><p> Question 3:What is your age?</p></div>
+<div class="answers">
+<input type="radio" name="age" value="21"> 21
+<input type="radio" name="age" value="18"> 18
+<input type="radio" name="age" value="14"> 14
+<input type="radio" name="age" value="16" id="answer1"> 16
+</div>
+
+
+<div class="questions"><p> Question 4:What do you identify as?</p></div>
+<div class="answers">
+<input type="radio" name="personality" value="introvert">Introvert
+<input type="radio" name="personality" value="extrovert">Extrovert
+<input type="radio" name="personality" value="ambivert" id="answer1">Ambivert
+<!--<input type="radio" name="personality" value="" id="answer1">No-->
+</div>
+<h3>End Round 1</h3>
+
+<h3>Round 2</h3>
+<div class="questions">
+<p>Question 5:Which city is next to Minneapolis?</p>
+</div>
+<div class="answers">
+<input type="radio" name="city" value="minneapolis">Minneapolis
+<input type="radio" name="city" value="st.paul" id="answer1">St. Paul
+<input type="radio" name="city" value="madison">Madison
+</div>
+
+
+<div class="questions"><p> Question 6:What is the healthiest type of food?</p></div>
+<div class="answers">
+<input type="radio" name="food" value="meat">Meat 
+<input type="radio" name="food" value="vegetables">Vegetables
+<input type="radio" name="food" value="fruit" id="answer1">Fruit
+<input type="radio" name="food" value="cereal">Cereal
+</div>
+
+
+<div class="questions"><p> Question 7:What day is the first day of the weekend?</p></div>
+<div class="answers">
+<input type="radio" name="day" value="Wednesday">Wednesday
+<input type="radio" name="day" value="monday">Monday
+<input type="radio" name="day" value="sunday">Sunday
+<input type="radio" name="day" value="friday" id="answer1">Friday
+</div>
+
+<div class="questions"><p> Question 8:Who held the ring of Mordor first?</p></div>
+<div class="answers">
+<input type="radio" name="character" value="frodo">Frodo 
+<input type="radio" name="character" value="isildor">Isildor
+<input type="radio" name="character" value="gollum" id="answer1">Gollum
+<!--<input type="radio" name="personality" value="" id="answer1">No-->
+</div>
+<h3>end of Round 2</h3>
+
+<h3>Round 3</h3>
+<div class="questions">
+<p>Question 9:Were was the Godfather born?</p>
+</div>
+<div class="answers">
+<input type="radio" name="mafia" value="brooklyn">Brooklyn
+<input type="radio" name="mafia" value="corleone" id="answer1">Corleone
+<input type="radio" name="mafia" value="california">San Diego
+</div>
+
+
+<div class="questions"><p> Question 10:Before he was Gandalf the White, Gandalf was known as Gandalf the...?</p></div>
+<div class="answers">
+<input type="radio" name="gandalf" value="blue">Blue 
+<input type="radio" name="gandalf" value="pink">Pink
+<input type="radio" name="gandalf" value="gray" id="answer1">Gray
+<input type="radio" name="gandalf" value="green">Green
+</div>
+
+
+<div class="questions"><p> Question 11:The Black Panther is from...?</p></div>
+<div class="answers">
+<input type="radio" name="panther" value="canada">Canada
+<input type="radio" name="panther" value="america">America
+<input type="radio" name="panther" value="Germany">Germany
+<input type="radio" name="panther" value="wakanda" id="answer1">Wakanda
+</div>
+
+<div class="questions"><p> Question 12:Gimli was a....?</p></div>
+<div class="answers">
+<input type="radio" name="gimli" value="elf">Elf
+<input type="radio" name="gimli" value="man">Man
+<input type="radio" name="gimli" value="dwarf" id="answer1">Dwarf
+<!--<input type="radio" name="personality" value="" id="answer1">No-->
+</div>
+
+
+<p><input type="submit" value="Submit" id="submit"></p>
+<p><input type="submit" value="Next Page" id="next"></p>
+<p><input type="submit" value="Restart Game" id="restart"></p>
+
+<h3>End of game html page</h3>
+
+
+
+
+
+
+
+<script type="text/javascript">
+//Successes
+//one question works!
+//correct and incorrect answer alert created
+//submit button works properly
+
+//Issues/Questions
+//click restart game button and opens a new browser window
+
+//The Gist of the game:
+//seperate each round with their questions and answers by the ids with the answer number
+//for example, id answer1 is equal to round 1 answers 
+//id answer2 will be set for round 2 of game, and so on and so forth depending on the round of the game
+//all rounds after round 1 will be triggered by a click function with the 'next round' button on the html page--this function will refresh page to print next questions and answers
+//computer will check if  all answers in  each round are correct through a function that has a conditional
+//if one or more answer is incorrect,(no matter the round),then print error message to console, and print error alert
+//also must create a counting function that counts how many questions the user is getting correct or wrong
+
+
+
+
+//var list = document.getElementsByTagName("p");
+//alert(list[0].innerText);
+//var inpAnswer= document.getElementById("answer1").checked;
+  
+//method "checked"--in js, check which input has a check value
+//boolean attribute--tells whether true or false 
+//if checked is true--selected value
+//create alert for that value
+
+//methods
+//$.each 
+
+
+var game {}
+
+  
+var userInput = " ";
+
+
+//initial on click function that works for the first question only
+//using the code below for all questions and answers
+//create a for loop so that answers AND questions are looped through?
+  $('#submit').on("click", function () {
+	 	event.preventDefault();
+ 		if (document.getElementById('answer1').checked){
+  			var input_value = document.getElementById('answer1').value;
+   			console.log("right");
+  		} else {
+  			console.log("wrong");
+  		}
+  
+  });
+
+//on click function only checking if userInput is right like answers
+// $('#submit').on("click", function () {
+// 	if (userInput === answer1) {
+// 		console.log("right");
+// 	} else {
+// 		console.log("wrong");
+// 	}
+
+// });
+ 
+
+
+
+ 
+
+//function that reloads the page so player can play again
+	//$('#restart').click(function(){
+		//location.reload();
+	//});
+</script>
+</body>
+</html>
