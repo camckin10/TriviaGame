@@ -5,3 +5,35 @@
 	color:;
 }
 
+body {
+	font-family: 'Rammetto One', cursive;
+	font-family: 'Permanent Marker', cursive;
+	background-image: url("https://ih0.redbubble.net/image.154128714.6310/flat,800x800,075,f.u1.jpg");
+}
+
+h1 {
+	font-size: 73px;
+}
+
+img {
+	height:160px;
+	width:160px;
+}
+
+#start, #done { 
+	color:#444444;
+	text-shadow: 0px 1px 1px #ffffff;
+	border-bottom:2px solid #b2b2b2;
+	background-color:#b9e4e3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#beeae9), to(#a8cfce));
+	font-size:33px;
+	height:64px;
+	width:112px;
+
+ }
+
+input[type=radio]{
+	margin:7px 18px 0;
+	font-size: 
+}	
+

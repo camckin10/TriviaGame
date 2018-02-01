@@ -7,59 +7,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Latest compiled and minified CSS -->
+  <!--bootstrap link-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--personal css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--google fonts links-->
+  <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rammetto+One" rel="stylesheet">
+
+
+
+  <!--jquery link-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <title>Trivia timer</title>
+
+  <title>Do It For The Culture</title>
 </head>
 
 <body>
-  <h1>Do It For The Culture</h1>
+  <h1>
+    <div class="container">
+       <img src="./assets/images/blackpower.gif" align="left" alt="blackpower" height="160" width="160"/>
+       Do It For The Culture
+      <img src="./assets/images/blackpower.gif" align="right" alt="blackpower" height="160" width="160"/>
+     </div>
+      <!--<div class="container">
+    <img src="./assets/images/blackpower.gif" align="right" alt="blackpower" height="160" width="160" />
+    </div>
+     </div>-->
+</h1>
+    
+
+
+<!--gif link for html  <IMG SRC="animation1.gif">.-->
 
  <div id="wrapper">
    <div id="quiz"></div>
  </div>
- <!--<div id="wrapper">
- <div id="quiz">
- <div id="questionOne"></div>
-   <!--<button class = "answers"><span id="choices"></span>A</button>
-  <button class = "answers">B</button>
-  <button class = "answers">C</button>
-  <button class = "answers">D</button>-->
 
-  <!--<div id="button"></div>
-
-  <div id="questionTwo"></div>
-    <div id="button"></div>
-
-   <!--<button class = "answers">A</button>
-  <button class = "answers">B</button>
-  <button class = "answers">C</button>
-  <button class = "answers">D</button>-->
-   
-  <!--<div id="questionThree"></div>
-  <!--<button class = "answers">A</button>
-  <button class = "answers">B</button>
-  <button class = "answers">C</button>
-  <button class = "answers">D</button>-->
-
-  <!--<div id="questionFour"></div>
-  <!-- <button class = "answers">A</button>
-  <button class = "answers">B</button>
-  <button class = "answers">C</button>
-  <button class = "answers">D</button>-->
- <!--</div>
- 
-  
-
- </div>
-
-<!--  <div id="useranswers"></div>-->
+<div id="buttonArea">
   <button id="start">Start</button>
+  <button id ="done">Done</button>
+</div>
+
+  <!--<button id="start">Start</button>-->
   <p>time remaining: <span id="timer"></span> seconds</p>
   <p id="correct"></p>
   <p id="incorrect"></p>
 
 </body>
+<!--javascript link-->
 <script src="assets/javascript/logic.js"></script>
 
 </html>
