@@ -1,23 +1,27 @@
-# TriviaGame
-Trivia assignment 
+Do It For The Culture- 
+Created an interactive Black American pop culture trivia game through a combination of JS and jQuery. When the user clicks on the link, they will be directed a page that has the trivia questions. 
 
+Getting Started-
+Interested parties can download the .zip file of the assignment, and then run the website in their preferred browser window. 
 
-How does it work?
-Created an interactive trivia game that has a Black pop culture theme. 
-Technologies used: HTML5,CSS3,Bootstrap,Javascript, and jQuery.
-
-
-Who will use this? 
-Anyone who wants to test their knowledge in Black pop culture. 
-
-What is the goal?
-Continue practice of Javascript and jQuery.
-
-
-
-Deployment
+Deployment-
 You can play the game here: https://camckin10.github.io/TriviaGame/
 
+Built With-
+HTML5/CSS3, JS, jQuery - languages used
+Bootstrap - framework used
 
-Screen Capture
---insert images 
+Authors-
+Chelsey McKinney - Full development of app
+
+License-
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+
+
+
+
+
+
+
+
